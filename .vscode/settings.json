@@ -1,0 +1,18 @@
+{
+ "editor.defaultFormatter": null,
+ "editor.formatOnSave": false,
+ "editor.formatOnType": false,
+ "editor.codeActionsOnSave": {
+  "source.fixAll": "explicit"
+ },
+ "[vue]": {
+  "editor.defaultFormatter": "Vue.volar"
+ },
+ "cSpell.words": [
+  "nuxt",
+  "nuxtjs"
+ ],
+ "[scss]": {
+  "editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter"
+ }
+}

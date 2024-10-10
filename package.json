@@ -1,0 +1,28 @@
+{
+  "name": "hello-cine",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint . --cache --ext .ts,.vue",
+    "e2e:gen": "npx playwright codegen localhost:3000",
+    "e2e:ui": "npx playwright test --ui",
+    "e2e:test": "npx playwright test"
+  },
+  "dependencies": {
+    "@nuxt/eslint": "^0.5.7",
+    "@nuxtjs/i18n": "^8.5.5",
+    "@vueuse/nuxt": "^11.1.0",
+    "nuxt": "^3.13.0",
+    "vue": "latest",
+    "vue-router": "latest"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0",
+    "typescript": "^5.6.3"
+  }
+}
