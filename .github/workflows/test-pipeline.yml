@@ -17,6 +17,8 @@ jobs:
       run: npm install -g pnpm && pnpm install
     - name: Run ESLint
       run: pnpm lint
+    - name: Test build
+      run: pnpm build
     - name: Install Playwright Browsers
       run: pnpm exec playwright install --with-deps
     - name: Run Playwright tests
