@@ -9,7 +9,7 @@ export default defineNuxtConfig({
 		'./infrastructure/vuetify',
 		'./infrastructure/translation'
 	],
-	ssr: false,
+	ssr: true,
 	runtimeConfig: {
 		public: {
 			movieApiUrl: process.env.NUXT_PUBLIC_MOVIE_API_URL,

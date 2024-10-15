@@ -7,6 +7,7 @@ export const useMovieApiFetch = <T>(request: UseFetchRequest<T>, options?: UseFe
 	return useFetch<T>(request, {
 		...options,
 		lazy: true,
+		server: false,
 		$fetch: useNuxtApp().$movieApiFetch,
 		query: { language: locale, ...options?.query }
 	})
