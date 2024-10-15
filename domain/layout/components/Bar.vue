@@ -41,11 +41,9 @@ const items = computed(() => [
         :to="item.redirection"
         link
       >
-        <v-list-item-content>
-          <v-list-item-title class="text-white">
-            {{ item.title }}
-          </v-list-item-title>
-        </v-list-item-content>
+        <v-list-item-title class="text-white">
+          {{ item.title }}
+        </v-list-item-title>
       </v-list-item>
     </v-list>
   </v-navigation-drawer>
