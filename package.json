@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "nuxt build",
+    "build": "nuxt build&&cd .output/server&&pnpm i& cd ../..",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
@@ -27,6 +27,7 @@
   "devDependencies": {
     "@iconify-json/mdi": "^1.2.1",
     "@nuxt/eslint-config": "^0.2.0",
+    "@nuxt/test-utils": "^3.14.3",
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
     "@playwright/test": "^1.48.0",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
