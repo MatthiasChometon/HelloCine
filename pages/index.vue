@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const { convertApiFilmToFilm } = useConvertApiFilmToFilm()
+const { locale } = useI18n()
 const page = ref(1)
 const { t } = useI18n()
 const filmList = ref<Film[]>([])
@@ -12,6 +13,10 @@ const { status } = await useMovieApiFetch<{ results: ApiFilm[] }>('/movie/now_pl
     filmList.value = [...filmList.value, ...filmListToAdd]
   },
   default: () => ({ results: [] })
+})
+watch(() => locale.value, () => {
+  filmList.value = []
+  page.value = 1
 })
 
 const addNewPageFilms = () => {
