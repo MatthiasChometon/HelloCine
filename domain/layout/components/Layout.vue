@@ -7,3 +7,9 @@
     </v-main>
   </v-app>
 </template>
+
+<style lang="css">
+body {
+  overflow: hidden;
+}
+</style>
