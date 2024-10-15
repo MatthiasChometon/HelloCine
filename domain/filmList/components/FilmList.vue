@@ -12,7 +12,7 @@ defineProps<{ filmList: Film[]; status: AsyncDataRequestStatus }>()
     </h3>
     <SkeletonLoaderFilmList v-if="status !== 'success'" />
     <v-infinite-scroll v-else width="100%" :items="filmList" @load="$emit('onLoadNewPage')">
-      <v-row class="mx-0">
+      <v-row data-testid="page-load" class="mx-0">
         <v-col
           v-for="film in filmList"
           :key="film.id"
