@@ -71,7 +71,7 @@ const createNewFilmRating = (): void => {
       <FilmDetailsRatingInput v-model="newFilmRating.rating" />
       <v-btn
         class="mt-2 mx-0 px-0"
-        :style="`width: ${$vuetify.display.mobile ? '100%' : '100px%'};`"
+        :style="`width: ${$vuetify.display.mobile ? '100%' : '100px'};`"
         color="secondary"
         variant="elevated"
         @click="submitForm"
