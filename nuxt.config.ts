@@ -3,11 +3,13 @@ export default defineNuxtConfig({
 	extends: [
 		'./domain/layout',
 		'./domain/filmList',
+		'./domain/filmDetails',
 		'./domain/film',
+		'./infrastructure/form',
 		'./infrastructure/vuetify',
 		'./infrastructure/translation'
 	],
-	ssr: true,
+	ssr: false,
 	runtimeConfig: {
 		public: {
 			movieApiUrl: process.env.NUXT_PUBLIC_MOVIE_API_URL,
