@@ -1,0 +1,29 @@
+{
+ "directedBy": "Directed by {director}",
+ "TMDBScore": "TMDB Score",
+ "votes": "Votes",
+ "mainActorsTitle": "Main Actors",
+ "synopsis": "Synopsis",
+ "ratings": "Ratings",
+ "rating": {
+   "title": "Rate the movie",
+   "noData": "No ratings",
+   "userName": {
+     "label": "Username",
+     "required": "Username is required.",
+     "minLength": "Username must be at least {min} characters.",
+     "maxLength": "Username cannot exceed {max} characters."
+   },
+   "comment": {
+     "label": "Comment",
+     "required": "Comment is required.",
+     "minLength": "Comment must be at least {min} characters.",
+     "maxLength": "Comment cannot exceed {max} characters."
+   },
+   "rating": {
+     "required": "A rating is required.",
+     "invalid": "The rating must be between 1 and 10."
+   },
+   "button": "Rate"
+ }
+}

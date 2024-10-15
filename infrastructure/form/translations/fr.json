@@ -1,0 +1,10 @@
+{
+ "validations": {
+   "required": "Ce champ est requis.",
+   "minLength": "La longueur minimale est de {min} caractères.",
+   "maxLength": "La longueur maximale est de {max} caractères.",
+   "alphaNum": "Seuls les caractères alphanumériques sont autorisés.",
+   "minValue": "La valeur minimale est de {min}.",
+   "maxValue": "La valeur maximale est de {max}."
+ }
+}

@@ -5,8 +5,12 @@ import frFilmList from '@/domain/filmList/translations/fr.json'
 import enFilmList from '@/domain/filmList/translations/en.json'
 import frFilm from '@/domain/film/translations/fr.json'
 import enFilm from '@/domain/film/translations/en.json'
+import frFilmDetails from '@/domain/filmDetails/translations/fr.json'
+import enFilmDetails from '@/domain/filmDetails/translations/en.json'
 import frTranslation from '@/infrastructure/translation/translations/fr.json'
 import enTranslation from '@/infrastructure/translation/translations/en.json'
+import frForm from '@/infrastructure/form/translations/fr.json'
+import enForm from '@/infrastructure/form/translations/en.json'
 
 export default defineI18nConfig(() => ({
 	legacy: false,
@@ -17,14 +21,18 @@ export default defineI18nConfig(() => ({
 			layout: enLayout,
 			translation: enTranslation,
 			filmList: enFilmList,
-			film: enFilm
+			filmDetails: enFilmDetails,
+			film: enFilm,
+			...enForm
 		},
 		fr: {
 			$vuetify: $frVuetify,
 			layout: frLayout,
 			translation: frTranslation,
 			filmList: frFilmList,
-			film: frFilm
+			filmDetails: frFilmDetails,
+			film: frFilm,
+			...frForm
 		}
 	}
 }))
