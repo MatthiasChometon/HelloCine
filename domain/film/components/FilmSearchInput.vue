@@ -16,11 +16,12 @@ const items = computed(() => data.value?.results.map(film => convertApiFilmToFil
     :items="items"
     append-inner-icon="mdi-magnify"
     :label="$t('film.searchLabel')"
-    :style="`max-width: ${$vuetify.display.mobile ? '300px' : '400px'};`"
+    :style="`max-width: ${$vuetify.display.mobile ? '170px' : '400px'};`"
     item-title="title"
     item-value="title"
     hide-details
     single-line
+    clearable
   >
     <template #item="{ props, item }">
       <NuxtLink :to="`/film/${item.raw.id}`" class="text-decoration-none text-white">
