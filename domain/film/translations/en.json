@@ -1,3 +1,4 @@
 {
- "searchLabel": "Search for movies"
+ "searchLabel": "Search for movies",
+ "searchDate": "Released on {searchDate}"
 }

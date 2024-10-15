@@ -27,7 +27,7 @@ const items = computed(() => data.value?.results.map(film => convertApiFilmToFil
         <v-list-item
           v-bind="props"
           :prepend-avatar="item.raw.posterUrl"
-          :subtitle="`Sortie le ${item.raw.release_date.replaceAll('-', '/')}`"
+          :subtitle="$t('film.searchDate', { searchDate: item.raw.release_date.replaceAll('-', '/') })"
           :title="item.raw.title"
         />
       </NuxtLink>
