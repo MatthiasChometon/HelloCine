@@ -19,7 +19,9 @@ const items = computed(() => [
     <v-app-bar-nav-icon variant="text" @click.stop="drawer = !drawer" />
 
     <v-app-bar-title :class="`${$vuetify.display.mobile ? 'mt-1 ml-2' : ''}`">
-      <h3>HelloCine</h3>
+      <NuxtLink to="/" class="text-decoration-none text-white">
+        <h3>HelloCine</h3>
+      </NuxtLink>
     </v-app-bar-title>
 
     <FilmSearchInput :class="`mr-6 ${$vuetify.display.mobile ? 'mb-2' : 'mb-1'}`" />
